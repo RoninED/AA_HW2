@@ -39,40 +39,133 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/movie" app:layout_constraintStart_toStartOf="@id/bg"
-        app:layout_constraintEnd_toEndOf="@id/bg"        app:layout_constraintTop_toTopOf="@id/bg"
+        android:src="@drawable/movie"
+        app:layout_constraintEnd_toEndOf="@id/bg"
+        app:layout_constraintStart_toStartOf="@id/bg"
+        app:layout_constraintTop_toTopOf="@id/bg" />
+
+    <ImageView
+        android:id="@+id/maskList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/masklist"
+        app:layout_constraintEnd_toEndOf="@id/bg"
+        app:layout_constraintStart_toStartOf="@id/bg"
+        app:layout_constraintTop_toTopOf="@id/bg" />
+
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/_137_min"
+        android:textColor="#565665"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/bg"
+        app:layout_constraintStart_toStartOf="@id/bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/avengers_end_game"
+        android:textColor="@color/whiteColorECECEC"
+        android:textSize="12dp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/length"
+        app:layout_constraintStart_toStartOf="@id/bg" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/redstarlist"
+        app:layout_constraintBottom_toBottomOf="@id/maskList"
+        app:layout_constraintStart_toStartOf="@id/maskList" />
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/redstarlist"
+        app:layout_constraintBottom_toBottomOf="@id/maskList"
+        app:layout_constraintStart_toEndOf="@id/star1" />
+
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/redstarlist"
+        app:layout_constraintBottom_toBottomOf="@id/maskList"
+        app:layout_constraintStart_toEndOf="@id/star2" />
+
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/redstarlist"
+        app:layout_constraintBottom_toBottomOf="@id/maskList"
+        app:layout_constraintStart_toEndOf="@id/star3" />
+
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/greystarlist"
+        app:layout_constraintBottom_toBottomOf="@id/maskList"
+        app:layout_constraintStart_toEndOf="@id/star4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/action_adventure_drama"
+        android:textSize="8dp" app:layout_constraintBottom_toTopOf="@id/star1" app:layout_constraintStart_toStartOf="@id/maskList"
+        android:textColor="#FF3466
+"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_125_reviews"
+        app:layout_constraintStart_toEndOf="@id/star5"
+        app:layout_constraintBottom_toBottomOf="@id/star5"
+        android:textSize="6sp"
+        android:textStyle="bold"
+        android:textColor="#6D6D80"
+        android:layout_marginStart="6dp"
         />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/masklist" app:layout_constraintStart_toStartOf="@id/bg"
-        app:layout_constraintEnd_toEndOf="@id/bg"        app:layout_constraintTop_toTopOf="@id/bg"
-        />
+        app:layout_constraintTop_toTopOf="@id/maskList"
+        app:layout_constraintStart_toStartOf="@id/maskList"
+        android:src="@drawable/age"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"/>
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/bg"
-    android:id="@+id/length"
-    android:text="@string/_137_min"
-    app:layout_constraintStart_toStartOf="@id/bg"
-    android:layout_marginStart="8dp"
-    android:layout_marginBottom="8dp"
-    android:textColor="#565665"
-    android:textStyle="bold"
-    android:textSize="10dp"
-    />
-
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/length"
-        android:text="@string/avengers_end_game"
-        app:layout_constraintStart_toStartOf="@id/bg"
-        android:layout_marginStart="8dp"
-
-        android:textColor="@color/whiteColorECECEC"
-        android:textStyle="bold"
-        android:textSize="12dp"
-        />
+        android:layout_height="wrap_content"
+        android:src="@drawable/greylike"
+        app:layout_constraintTop_toTopOf="@id/maskList"
+        app:layout_constraintEnd_toEndOf="@id/maskList"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="6dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
